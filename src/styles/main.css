@@ -1,0 +1,22 @@
+/*Wrappers*/
+.wrapper-main{
+    margin: 0 20vw;
+}
+
+.wrapper-gallery{
+    margin: 0 20vw;
+}
+/*Default Text styling*/
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+}
+
+#header-main nav{
+    display: flex;
+}

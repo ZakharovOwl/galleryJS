@@ -3,7 +3,7 @@
     
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-row: 10px;
+    grid-gap: 10px;
     grid-template-areas: 
     "gallery-p gallery-p gallery-p gallery-p"
     "gallery-h2 gallery-h2 gallery-h2 gallery-h2"
@@ -39,6 +39,7 @@
 #index-gallery .img3{
     grid-area: img3;
     background-image: url("../../assets/img/img3.jpg");
+    height: 610px;
 }
 #index-gallery .img4{
     grid-area: img4;
@@ -55,4 +56,27 @@
 #index-gallery .img7{
     grid-area: img7;
     background-image: url("../../assets/img/img7.jpg");
+}
+
+/*Gallery img titles*/
+
+.gallery-img div{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery-img a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;  
+}
+.gallery-img div:hover{
+    opacity: 0.8;
+    transition: all ease-in-out 100ms;
 }

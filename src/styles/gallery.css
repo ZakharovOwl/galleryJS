@@ -100,3 +100,37 @@
     max-width: 80vw;
     max-height: 80vh;
 }
+
+/*btn next*/
+
+.img-bnt-next{
+    display: block;
+    padding: 6px 10px;
+    border-radius: 5px;
+    background-color: black;
+    position: fixed;
+    top: 48vh;
+    z-index: 500;
+    color: blanchedalmond;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.img-bnt-next:hover{
+    opacity: 0.8;
+}
+
+.img-bnt-prev{
+    display: block;
+    padding: 6px 10px;
+    border-radius: 5px;
+    background-color: black;
+    position: fixed;
+    top: 48vh;
+    z-index: 500;
+    color: blanchedalmond;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.img-bnt-prev:hover{
+    opacity: 0.8;
+}

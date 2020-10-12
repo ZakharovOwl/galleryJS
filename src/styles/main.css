@@ -18,7 +18,9 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: auto 3vw;
     min-height: 10vh;
+
 }
 
 .logo a{
@@ -39,6 +41,8 @@ nav{
     font-size: 22px;
     width: 20%;
     margin-left: 2%;
+    width: 17vw;
+    min-width: 230px;
 }
 .nav-links{
     display: flex;
@@ -59,7 +63,8 @@ nav{
     font-size: 14px;
 }
 .wrapper-gallery{
-    margin: 0 20vw;
+    margin: 0 10vw;
+    margin-top: 3rem;
 }
 /*Default Text styling*/
 p{
@@ -72,3 +77,17 @@ h2{
     font-size: 32px;
 }
 
+.wrapper-gallery__name{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-left: 5vw;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    color: #f0ffff6e;
+    font-size: 14px;
+}
+.wrapper-gallery__name>h2{
+    margin-top: 5px;
+    font-size: 14px;
+}

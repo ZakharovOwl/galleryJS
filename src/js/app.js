@@ -12,7 +12,7 @@ if(galleryImages){
             let getImgUrlPos = getFullImgUrl.split("/preview/");
             /*console.log(getImgUrlPos);*/
             let setNewImgUrl = getImgUrlPos[1].replace(`")`, ``);
-            console.log(setNewImgUrl);
+            /*console.log(setNewImgUrl);*/
             getLatestOpenedImg = index + 1;
 
             let container = document.body;

@@ -19,7 +19,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     margin: auto 3vw;
-    min-height: 10vh;
+    min-height: 15vh;
 
 }
 
@@ -30,7 +30,7 @@ nav{
     text-decoration: none;
     color: black;
     letter-spacing: 1px;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .logo a img{

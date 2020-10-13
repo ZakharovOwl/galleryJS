@@ -12,7 +12,7 @@ if(galleryImages){
             let getImgUrlPos = getFullImgUrl.split("/preview/");
             /*console.log(getImgUrlPos);*/
             let setNewImgUrl = getImgUrlPos[1].replace(`")`, ``);
-            /*console.log(setNewImgUrl);*/
+            console.log(setNewImgUrl);
             getLatestOpenedImg = index + 1;
 
             let container = document.body;
@@ -23,12 +23,12 @@ if(galleryImages){
 
             let newImg = document.createElement('img')
             newImgWindow.appendChild(newImg);
-            newImg.setAttribute('src',`/assets/img/${setNewImgUrl}`);
+            newImg.setAttribute('src',`assets/img/${setNewImgUrl}`);
             newImg.setAttribute('id',`current-img`)
 
             newImg.onload = function(){
             let imgWidth = this.width;
-            let calcImgToEdge = ((windowWidth - imgWidth) / 2) - 79;
+            let calcImgToEdge = ((windowWidth - imgWidth) / 2) - 80;
 
             //btn next
             let newNextBtn = document.createElement('a')
@@ -37,7 +37,7 @@ if(galleryImages){
             container.appendChild(newNextBtn)
             newNextBtn.setAttribute('class', 'img-btn-next')
             newNextBtn.setAttribute('onclick', 'changeImg(1)')
-            newNextBtn.style.cssText = `right:${calcImgToEdge}px`
+            /*newNextBtn.style.cssText = `right:${calcImgToEdge}px`*/
             //btn back
             let newPrevBtn = document.createElement('a')
             let btnPrevText = document.createTextNode('Back')
@@ -45,7 +45,7 @@ if(galleryImages){
             container.appendChild(newPrevBtn)
             newPrevBtn.setAttribute('class', 'img-btn-prev')
             newPrevBtn.setAttribute('onclick', 'changeImg(0)')
-            newPrevBtn.style.cssText = `left:${calcImgToEdge}px`
+            /*newPrevBtn.style.cssText = `left:${calcImgToEdge}px`*/
             }
         }
     });
